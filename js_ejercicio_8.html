@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios con JS</title>
+    <link rel="stylesheet" href="css/ejercicio_8.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <h1>Contador de Palabras y Caracteres</h1>
+      <hr />
+
+      <div class="editor">
+        <!-- Área de texto -->
+        <textarea
+          id="textoArea"
+          placeholder="Escribe aquí tu texto..."
+          rows="10"
+        ></textarea>
+
+        <!-- Estadísticas en tiempo real -->
+        <div class="estadisticas">
+          <div class="stat">
+            <div class="stat-numero" id="contadorPalabras">0</div>
+            <div class="stat-etiqueta">Palabras</div>
+          </div>
+
+          <div class="stat">
+            <div class="stat-numero" id="contadorCaracteres">0</div>
+            <div class="stat-etiqueta">Caracteres</div>
+          </div>
+
+          <div class="stat">
+            <div class="stat-numero" id="contadorEspacios">0</div>
+            <div class="stat-etiqueta">Con espacios</div>
+          </div>
+        </div>
+
+        <!-- Botón para limpiar -->
+        <button id="btnLimpiar" class="btn-limpiar">Limpiar texto</button>
+      </div>
+
+      <a href="index.html" class="volver">← Volver al índice</a>
+    </div>
+
+    <script src="src/js_ejercicio8.js"></script>
+  </body>
+</html>

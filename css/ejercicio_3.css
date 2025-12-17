@@ -1,0 +1,129 @@
+body {
+  padding: 16px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-decoration: underline;
+  margin-top: 0;
+}
+
+.contenedor {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #f5576c;
+}
+
+#btnAgregar {
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #f5576c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+#btnAgregar:hover {
+  background-color: #e04055;
+  transform: translateY(-2px);
+}
+
+#btnAgregar:active {
+  transform: translateY(0);
+}
+
+#lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#lista li {
+  background-color: #f8f9fa;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 4px solid #f5576c;
+  animation: aparecer 0.3s ease;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#lista li span {
+  flex: 1;
+  word-break: break-word;
+}
+
+.btnEliminar {
+  padding: 8px 15px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+  margin-left: 10px;
+}
+
+.btnEliminar:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+.volver {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #f5576c;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.volver:hover {
+  background-color: #e04055;
+}

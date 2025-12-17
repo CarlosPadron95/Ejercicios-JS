@@ -1,0 +1,106 @@
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.contenedor {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 700px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-size: 28px;
+  text-decoration: underline;
+}
+
+.editor {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+textarea {
+  width: 95%;
+  padding: 20px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+textarea:focus {
+  border-color: #667eea;
+}
+
+textarea::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.estadisticas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.stat {
+  background-color: #c3cfe2;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid #e0e0e0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.stat-numero {
+  font-size: 48px;
+  font-weight: bold;
+  color: #667eea;
+  font-family: "Courier New", monospace;
+  margin-bottom: 10px;
+}
+
+.stat-etiqueta {
+  font-size: 14px;
+  color: #666;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-limpiar {
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #f5576c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.volver {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  padding: 12px 25px;
+  background-color: #667eea;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.3s;
+}

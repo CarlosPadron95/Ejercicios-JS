@@ -1,0 +1,133 @@
+body {
+  justify-content: center;
+  margin: 0;
+  padding: 16px;
+}
+
+h1 {
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.calculadora {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="number"] {
+  padding: 15px;
+  font-size: 18px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+  text-align: center;
+}
+
+input[type="number"]:focus {
+  border-color: #667eea;
+}
+
+.botones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.btn-operacion {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: white;
+}
+
+#btnSumar {
+  background-color: #28a745;
+}
+
+#btnSumar:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#btnRestar {
+  background-color: #ffc107;
+}
+
+#btnRestar:hover {
+  background-color: #e0a800;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#btnMultiplicar {
+  background-color: #17a2b8;
+}
+
+#btnMultiplicar:hover {
+  background-color: #138496;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#btnDividir {
+  background-color: #dc3545;
+}
+
+#btnDividir:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-operacion:active {
+  transform: translateY(0);
+}
+
+.resultado {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  border: 2px dashed #ddd;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resultado.exito {
+  background-color: #d4edda;
+  border-color: #28a745;
+  color: #155724;
+}
+
+.resultado.error {
+  background-color: #f8d7da;
+  border-color: #dc3545;
+  color: #721c24;
+}
+
+.volver {
+  text-decoration: none;
+}

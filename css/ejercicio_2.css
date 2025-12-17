@@ -1,0 +1,14 @@
+body {
+  padding: 16px;
+  margin: 0;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+.volver {
+  margin-top: 20px;
+  display: block;
+  text-decoration: none;
+}

@@ -1,0 +1,61 @@
+/* ESTILOS GENERALES Y LAYOUT */
+body {
+  color: #333;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+/* ESTILOS DEL CAMPO DE BÚSQUEDA */
+#filtro {
+  width: 350px;
+  padding: 12px 15px;
+  margin-bottom: 25px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#filtro:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+#listaAnimales {
+  list-style: none;
+  padding: 0;
+  width: 350px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+#listaAnimales li {
+  padding: 15px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 17px;
+  transition: background-color 0.2s;
+}
+
+#listaAnimales li:hover {
+  background-color: #f9f9f9;
+}
+
+#listaAnimales li:last-child {
+  border-bottom: none;
+}
+
+.volver {
+  margin-top: 20px;
+  text-decoration: none;
+}

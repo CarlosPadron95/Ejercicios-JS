@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios con JS</title>
+    <link rel="stylesheet" href="css/ejercicio_9.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <h1>Lista de Tareas</h1>
+      <hr />
+
+      <!-- Input para añadir tareas -->
+      <div class="input-group">
+        <input
+          type="text"
+          id="inputTarea"
+          placeholder="Escribe una nueva tarea..."
+        />
+        <button id="btnAgregar" class="btn-agregar">+ Agregar</button>
+      </div>
+
+      <!-- Lista de tareas -->
+      <ul id="listaTareas" class="lista-tareas"></ul>
+
+      <!-- Mensaje cuando no hay tareas -->
+      <div id="mensajeVacio" class="mensaje-vacio">
+        No hay tareas todavía. ¡Añade una para empezar!
+      </div>
+
+      <!-- Botones de acción -->
+      <div class="acciones">
+        <button id="btnLimpiarCompletadas" class="btn-accion">
+          Limpiar completadas
+        </button>
+        <button id="btnLimpiarTodo" class="btn-accion btn-peligro">
+          Eliminar todas
+        </button>
+      </div>
+
+      <!-- Estadísticas -->
+      <div class="estadisticas">
+        <span id="totalTareas">Total: 0</span>
+        <span id="tareasCompletadas">Completadas: 0</span>
+        <span id="tareasPendientes">Pendientes: 0</span>
+      </div>
+
+      <a href="index.html" class="volver">← Volver al índice</a>
+    </div>
+
+    <script src="src/js_ejercicio9.js"></script>
+  </body>
+</html>

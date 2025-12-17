@@ -1,0 +1,81 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 16px;
+}
+
+.contenedor {
+  background: white;
+  padding: 50px;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  text-decoration: underline;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.display {
+  font-size: 80px;
+  font-weight: bold;
+  color: #1e3c72;
+  background-color: #c3cfe2;
+  padding: 40px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  letter-spacing: 8px;
+}
+
+.controles {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: white;
+  min-width: 140px;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+.btn-iniciar {
+  background-color: #667eea;
+}
+
+.btn-pausar {
+  background-color: #f5576c;
+}
+
+.btn-reiniciar {
+  background-color: #00f2fe;
+}
+
+.volver {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 25px;
+  background-color: #1e3c72;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+}

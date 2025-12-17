@@ -1,0 +1,180 @@
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.contenedor {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  text-decoration: underline;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+
+.btn-agregar {
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #764ba2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.lista-tareas {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.tarea-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border-left: 4px solid #667eea;
+}
+
+.tarea-item.completada {
+  background: #d4edda;
+  border-left-color: #28a745;
+}
+
+.tarea-item.completada .tarea-texto {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.tarea-texto {
+  flex: 1;
+  font-size: 16px;
+  word-break: break-word;
+}
+
+.btn-eliminar {
+  padding: 8px 12px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.mensaje-vacio {
+  text-align: center;
+  color: #999;
+  font-size: 16px;
+  font-style: italic;
+  padding: 40px 20px;
+  display: none;
+}
+
+.mensaje-vacio.visible {
+  display: block;
+}
+
+.acciones {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.btn-accion {
+  flex: 1;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-peligro {
+  background-color: #dc3545;
+}
+
+.estadisticas {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #c3cfe2;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.estadisticas span {
+  font-size: 14px;
+}
+
+.volver {
+  display: block;
+  text-align: center;
+  padding: 12px 25px;
+  background-color: #667eea;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* Scrollbar personalizada */
+.lista-tareas::-webkit-scrollbar {
+  width: 8px;
+}
+
+.lista-tareas::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.lista-tareas::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 10px;
+}
+
+.lista-tareas::-webkit-scrollbar-thumb:hover {
+  background: #5568d3;
+}

@@ -1,0 +1,112 @@
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.contenedor {
+  background: white;
+  border-radius: 20px;
+  max-width: 550px;
+  width: 100%;
+  margin-top: 60px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0;
+  font-size: 28px;
+  text-decoration: underline;
+}
+
+.generador {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input[type="number"] {
+  padding: 15px;
+  font-size: 18px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+  text-align: center;
+}
+
+input[type="number"]:focus {
+  border-color: #667eea;
+}
+
+.btn-generar {
+  padding: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: #5568d3;
+}
+
+.resultado {
+  padding: 25px;
+  background-color: #c3cfe2;
+  border-radius: 10px;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-break: break-all;
+  border: 2px solid #e0e0e0;
+}
+
+.texto-inicial {
+  color: #999;
+  font-style: italic;
+  margin: 0;
+}
+
+.contrasena {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Courier New", monospace;
+  color: #333;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.error {
+  color: #dc3545;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.volver {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  padding: 12px 25px;
+  background-color: #667eea;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
