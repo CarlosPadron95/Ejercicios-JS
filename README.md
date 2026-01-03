@@ -11,7 +11,7 @@
 ---
 
 <a name="español"></a>
-## 🇪🇸 Versión en Español
+## Versión en Español
 
 Esta es una colección de mini-proyectos desarrollados exclusivamente con **JavaScript Vanilla**, HTML5 y CSS3. Estos ejercicios fueron la base fundamental para entender la lógica de programación y la manipulación del DOM antes de mi transición a React.
 
@@ -27,7 +27,7 @@ Puedes ver los ejercicios funcionando aquí: [**VER PROYECTO**](https://carlospa
 ---
 
 <a name="english"></a>
-## 🇺🇸 English Version
+## English Version
 
 This is a collection of mini-projects developed exclusively with **Vanilla JavaScript**, HTML5, and CSS3. These exercises were the core foundation for understanding programming logic and DOM manipulation before my transition to React.
 
